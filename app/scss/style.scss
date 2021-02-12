@@ -340,3 +340,72 @@
 }
 
 // advantages end
+
+//author start
+
+.author{
+    min-height: 761px;
+}
+.author_wrapper{
+    padding-top: 245px;
+}
+.author_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 70px 70px;
+    background-color: $green;
+    max-width: 660px;
+    margin: 0 auto;
+}
+.author_title{
+    color: #fff;
+    font-size: 30px;
+    line-height: 36px;
+    max-width: 270px;
+    span{
+        @include f700
+    }
+}
+.author_link{
+    padding: 10px 40px;
+    background-color: #fff;
+    color: #000;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+//author end
+
+// tutorial start
+
+.tutorial{
+    padding: 70px 0px 120px;
+    &_inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &_item{
+        max-width: 370px;
+        width: 100%;
+    }
+}
+.tutorial_item{
+    &-images{
+        min-height: 270px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &-title{
+        @include f700;
+        font-size: 24px;
+        background-color: #f8f8f8;
+        text-align: center;
+        padding: 30px 10px;
+        color: $bg;
+        text-align: center;
+    }
+}
+
+// tutorial end
