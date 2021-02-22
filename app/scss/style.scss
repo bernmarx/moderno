@@ -250,8 +250,8 @@
             display: inline-block;
             margin-left: 3px;
             margin-right: 3px;
-            &.slick-active{
-                button{
+            &.slick-active {
+                button {
                     background-color: $green;
                 }
             }
@@ -273,36 +273,36 @@
 
 // advantages start
 
-.advantages{
+.advantages {
     background-color: $bg;
     padding: 110px 0;
 }
-.advantages_title{
+.advantages_title {
     color: #fff;
 }
-.advantages_inner{
+.advantages_inner {
     display: flex;
     justify-content: space-between;
 }
-.advantages_item{
+.advantages_item {
     max-width: 370px;
     text-align: center;
     padding: 0px 15px;
-    transition: all .3s;
-    &:hover{
-        .advantages_item-images{
+    transition: all 0.3s;
+    &:hover {
+        .advantages_item-images {
             background-color: $green;
         }
-        .advantages_item-title{
+        .advantages_item-title {
             color: $green;
         }
-        .advantages_item-images{
-            g{
+        .advantages_item-images {
+            g {
                 fill: #fff;
             }
         }
     }
-    &-images{
+    &-images {
         width: 114px;
         height: 114px;
         background-color: #fff;
@@ -313,28 +313,28 @@
         margin: 0 auto;
         margin-bottom: 30px;
     }
-    &-title{
+    &-title {
         margin-bottom: 25px;
         color: #fff;
         @include f500;
         font-size: 24px;
     }
-    &-text{
+    &-text {
         font-size: 15px;
     }
 }
-.icosvg-1{
-    svg{
+.icosvg-1 {
+    svg {
         width: 50px;
     }
 }
-.icosvg-2{
-    svg{
+.icosvg-2 {
+    svg {
         width: 70px;
     }
 }
-.icosvg-3{
-    svg{
+.icosvg-3 {
+    svg {
         width: 86px;
     }
 }
@@ -343,13 +343,13 @@
 
 //author start
 
-.author{
+.author {
     min-height: 761px;
 }
-.author_wrapper{
+.author_wrapper {
     padding-top: 245px;
 }
-.author_box{
+.author_box {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -358,16 +358,16 @@
     max-width: 660px;
     margin: 0 auto;
 }
-.author_title{
+.author_title {
     color: #fff;
     font-size: 30px;
     line-height: 36px;
     max-width: 270px;
-    span{
-        @include f700
+    span {
+        @include f700;
     }
 }
-.author_link{
+.author_link {
     padding: 10px 40px;
     background-color: #fff;
     color: #000;
@@ -379,25 +379,25 @@
 
 // tutorial start
 
-.tutorial{
+.tutorial {
     padding: 70px 0px 120px;
-    &_inner{
+    &_inner {
         display: flex;
         justify-content: space-between;
     }
-    &_item{
+    &_item {
         max-width: 370px;
         width: 100%;
     }
 }
-.tutorial_item{
-    &-images{
+.tutorial_item {
+    &-images {
         min-height: 270px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
     }
-    &-title{
+    &-title {
         @include f700;
         font-size: 24px;
         background-color: #f8f8f8;
@@ -409,3 +409,158 @@
 }
 
 // tutorial end
+
+// footer start
+
+.footer {
+    background-color: $bg;
+    &_inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 0px 80px;
+    }
+}
+.footer_copy {
+    border-top: 1px solid #424d53;
+}
+.footer_copy-text {
+    text-align: center;
+    font-size: 15px;
+    color: #919699;
+    padding: 25px 0px 25px;
+}
+.footer_col {
+    max-width: 270px;
+    width: 100%;
+    &-menu {
+        max-width: 220px;
+    }
+    &-title {
+        font-size: 22px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        color: #fff;
+        padding-bottom: 30px;
+        position: relative;
+        margin-bottom: 30px;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 2px;
+            width: 51px;
+            height: 3px;
+            background-color: $green;
+        }
+    }
+    &-text {
+        color: #b7c3c8;
+        margin-bottom: 30px;
+    }
+}
+.footer_info {
+    margin-top: 18px;
+    color: #fff;
+    @include f500;
+    padding-left: 30px;
+    position: relative;
+    &::before{
+        content: '\f041';
+        font-family: 'icomoon';
+        color: $green;
+        font-size: 18px;
+        position: absolute;
+        left: 0;
+    }
+}
+.footer_info-phone{
+    &::before{
+        content: '\f095';
+    }
+}
+.footer_col-list{
+    a{
+        margin-bottom: 15px;
+        color: #b7c3c8;
+        padding-left: 22px;
+        position: relative;
+        &::before{
+            content: '\f105';
+            font-family: 'icomoon';
+            position: absolute;
+            left: 0;
+            font-size: 18px;
+            color: $green;
+        }
+    }
+}
+.footer_social-link{
+    margin-bottom: 33px;
+    li{
+        display: inline-block;
+    }
+    a{
+        width: 28px;
+        height: 28px;
+        background-image: url(../images/css_sprites.png);
+        &+a{
+            margin-left: 7px;
+        }
+    }
+}
+.link-facebook{
+    background-position: -1px -1px;
+}
+.link-twitter{
+    background-position: -31px -1px;
+}
+.link-youtube{
+    background-position: -1px -31px;
+}
+.link-pinterest{
+    background-position: -31px -31px;
+}
+.link-linkedin{
+    background-position: -61px -1px;
+}
+.footer_form-title{
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 20px;
+}
+.footer_form{
+    position: relative;
+    input{
+        border: none;
+        background-color: #2f3c43;
+        display: block;
+        width: 100%;
+        outline: none;
+        height: 40px;
+        color: #fff;
+        font-size: 14px;
+        padding-left: 13px;
+        padding-right: 50px;
+        &::placeholder{
+            color: #697378;
+        }
+    }
+    button{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: $green;
+        border: none;
+        height: 40px;
+        width: 43px;
+        cursor: pointer;
+        &::before{
+            content: '\f124';
+            font-family: 'icomoon';
+            color: #fff;
+            font-size: 20px;
+        }
+    }
+}
+
+// footer end
