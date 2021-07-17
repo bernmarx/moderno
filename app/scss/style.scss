@@ -310,6 +310,105 @@
 
 // end header
 
+//start modal
+#modal{
+    background-color: $green;
+    max-width: 730px;
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+.login_title{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 48px;
+    @include f700;
+    margin-bottom: 40px;
+}
+.login_wrapper{
+    form{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    label{
+        position: relative;
+        &::before{
+            position: absolute;
+            font-family: 'icomoon';
+            color: #fff;
+            font-size: 14px;
+            left: 18px;
+            top: 9px;
+        }
+    }
+    .login_label-name::before{
+        content: "\f007";
+        z-index: 1;
+    }
+    .login_label-pass::before{
+        content: "\f023";
+        z-index: 1;
+    }
+    input{
+        height: 43px;
+        margin-bottom: 8px;
+        border: none;
+        background-color: #76ae36;
+        color: #fff;
+        outline: none;
+        font-size: 14px;
+        padding-left: 40px;
+        display: block;
+        width: 100%;
+        &::placeholder{
+            color: #fff;
+            font-size: 14px;
+            
+        }
+    }
+    button{
+        margin-top: 19px;
+        padding: 18px 0 16px;
+        background-color: #fff;
+        width: 140px;
+        text-transform: uppercase;
+        border: none;
+        margin-right: 10px;
+        @include f700;
+        color: #000;
+        text-align: center;
+        box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75); 
+    }
+    .lost-pass{
+        display: block;
+        margin-top: 20px;
+        color: #fff;
+        font-size: 18px;
+    }
+    .create-acc{
+        margin-top: 19px;
+        padding: 15px 0 15px 28px;
+        text-align: center;
+        width: 245px;
+        background-color: #76ae36;
+        color: #fff;
+        font-size: 18px;
+        position: relative;
+        &::before{
+            font-family: 'icomoon';
+            content: "\f044";
+            position: absolute;
+            top: 15px;
+            left: 35px;
+        }
+    }
+}
+.fancybox-button svg path{
+    color: #fff;
+}
+//end modal
+
 // start search
 
 .search {
@@ -1367,6 +1466,134 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+.price_box{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+.price_product{
+    color: $red;
+    font-size: 22px;
+    @include f500;
+}
+.product_price{
+    button{
+        margin-bottom: 7px;
+        box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+        border: none;
+        background-color: $text;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif !important;
+        text-align: center;
+        display: block;
+        padding: 17px 5px 15px;
+        width: 100%;
+        cursor: pointer;
+        &::before{
+            font-weight: 400;
+            font-family: 'icomoon';
+            padding-right: 8px;
+        }
+    }
+    .icon-shopping-cart{
+        background-color: $green;
+    }
+    .icon-heart-o{
+        background-color: #42a5f5;
+    }
+}
+.product-author_box{
+    padding: 25px 0;
+    display: flex;
+}
+.author_avatar{
+    margin-right: 14px;
+}
+.author_name{
+    font-size: 18px;
+    color: $bg;
+    margin-bottom: 2px;
+}
+.author_info-link{
+    color: #707070;
+    font-size: 13px;
+    padding: 6px 9px 5px;
+    border: 1px solid #d5d5d5;
+}
+.author_awards-list{
+    li{
+        display: inline-block;
+        color: #fff;
+        font-size: 20px;
+        position: relative;
+        &::before{
+            position: absolute;
+            top: 6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        & + li{
+            margin-left: 4px;
+        }
+    }
+    .icon-meh-o{
+        background-image: url(../images/awards/awards-orange.png);
+        width: 34px;
+        height: 37px;
+    }
+    .icon-pagelines{
+        background-image: url(../images/awards/awards-red.png);
+        width: 34px;
+        height: 37px;
+    }
+    .icon-flash{
+        background-image: url(../images/awards/awards-blue.png);
+        width: 34px;
+        height: 37px;
+    }
+    .icon-foursquare{
+        background-image: url(../images/awards/awards-green.png);
+        width: 34px;
+        height: 37px;
+    }
+    .icon-yen{
+        background-image: url(../images/awards/awards-gray.png);
+        width: 34px;
+        height: 37px;
+    }
+}
+.aside_item-sales{
+    padding-top: 23px;
+    font-size: 16px;
+    @include f300;
+    span{
+        @include f700;
+        font-size: 20px;
+        color: #263238;
+        padding-right: 15px;
+        &::before{
+            font-family: 'icomoon';
+            color: #a6b5bb;
+            padding-right: 20px;
+            content: '\f07a'
+        }
+    }
+}
+.aside_item.sales-number{
+    padding-bottom: 25px;
+}
+.information_line{
+    font-size: 14px;
+    color: #70838d;
+    margin-top: 20px;
+    line-height: 18px;
+    span{
+        color: $bg;
+        @include f500;
+    }
 }
 
 //end product-one
