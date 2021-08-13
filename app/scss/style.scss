@@ -311,14 +311,14 @@
 // end header
 
 //start modal
-#modal{
+#modal {
     background-color: $green;
     max-width: 730px;
     width: 100%;
     padding-top: 90px;
     padding-bottom: 100px;
 }
-.login_title{
+.login_title {
     text-align: center;
     color: #fff;
     text-transform: uppercase;
@@ -326,31 +326,31 @@
     @include f700;
     margin-bottom: 40px;
 }
-.login_wrapper{
-    form{
+.login_wrapper {
+    form {
         max-width: 400px;
         margin: 0 auto;
     }
-    label{
+    label {
         position: relative;
-        &::before{
+        &::before {
             position: absolute;
-            font-family: 'icomoon';
+            font-family: "icomoon";
             color: #fff;
             font-size: 14px;
             left: 18px;
             top: 9px;
         }
     }
-    .login_label-name::before{
+    .login_label-name::before {
         content: "\f007";
         z-index: 1;
     }
-    .login_label-pass::before{
+    .login_label-pass::before {
         content: "\f023";
         z-index: 1;
     }
-    input{
+    input {
         height: 43px;
         margin-bottom: 8px;
         border: none;
@@ -361,13 +361,12 @@
         padding-left: 40px;
         display: block;
         width: 100%;
-        &::placeholder{
+        &::placeholder {
             color: #fff;
             font-size: 14px;
-            
         }
     }
-    button{
+    button {
         margin-top: 19px;
         padding: 18px 0 16px;
         background-color: #fff;
@@ -378,15 +377,15 @@
         @include f700;
         color: #000;
         text-align: center;
-        box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75); 
+        box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
     }
-    .lost-pass{
+    .lost-pass {
         display: block;
         margin-top: 20px;
         color: #fff;
         font-size: 18px;
     }
-    .create-acc{
+    .create-acc {
         margin-top: 19px;
         padding: 15px 0 15px 28px;
         text-align: center;
@@ -395,8 +394,8 @@
         color: #fff;
         font-size: 18px;
         position: relative;
-        &::before{
-            font-family: 'icomoon';
+        &::before {
+            font-family: "icomoon";
             content: "\f044";
             position: absolute;
             top: 15px;
@@ -404,7 +403,7 @@
         }
     }
 }
-.fancybox-button svg path{
+.fancybox-button svg path {
     color: #fff;
 }
 //end modal
@@ -1383,59 +1382,59 @@
     border: 1px solid #dcdcdc;
     margin-bottom: 28px;
 }
-.product-one_tabs{
+.product-one_tabs {
     margin-bottom: 55px;
 }
-.tabs{
+.tabs {
     display: flex;
     text-align: center;
     border: 1px solid #d7d7d7;
-    .tab{
+    .tab {
         width: 100%;
         background-color: #fff;
         font-size: 16px;
         color: #70838d;
         padding: 20px 0;
         cursor: pointer;
-        & + .tab{
+        & + .tab {
             border-left: 1px solid #d7d7d7;
         }
     }
 }
-.tab_content{
+.tab_content {
     background-color: #fff;
     border: 1px solid #d7d7d7;
     border-top: none;
     padding: 30px 30px 50px;
 }
-.tab-item{
+.tab-item {
     display: none;
-    &:first-child{
+    &:first-child {
         display: block;
     }
 }
-.tab-items_list{
+.tab-items_list {
     line-height: 36px;
     font-size: 16px;
     color: #707070;
     column-count: 2;
     column-gap: 25px;
-    li{
+    li {
         max-width: 270px;
         width: 100%;
     }
 }
-.active{
+.active {
     border-bottom: 3px solid $green;
     @include f500;
     color: #000 !important;
 }
-.product-one_more-icons{
+.product-one_more-icons {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.productmini{
+.productmini {
     margin-bottom: 27px;
     display: flex;
     height: 90px;
@@ -1444,22 +1443,22 @@
     max-width: 270px;
     background-color: #fff;
     width: 100%;
-    &_name{
+    &_name {
         @include f500;
         font-size: 14px;
         color: $bg;
     }
-    &_theme{
+    &_theme {
         color: $green;
         font-size: 12px;
     }
-    &_price{
+    &_price {
         @include f700;
         color: $bg;
         font-size: 18px;
     }
 }
-.productmini_images{
+.productmini_images {
     width: 100px;
     height: 90px;
     margin-right: 20px;
@@ -1467,18 +1466,18 @@
     background-size: cover;
     background-position: center;
 }
-.price_box{
+.price_box {
     display: flex;
     justify-content: space-between;
     padding: 30px 0px;
 }
-.price_product{
+.price_product {
     color: $red;
     font-size: 22px;
     @include f500;
 }
-.product_price{
-    button{
+.product_price {
+    button {
         margin-bottom: 7px;
         box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
         border: none;
@@ -1486,111 +1485,111 @@
         color: #fff;
         font-size: 16px;
         font-weight: 700;
-        font-family: 'Roboto', sans-serif !important;
+        font-family: "Roboto", sans-serif !important;
         text-align: center;
         display: block;
         padding: 17px 5px 15px;
         width: 100%;
         cursor: pointer;
-        &::before{
+        &::before {
             font-weight: 400;
-            font-family: 'icomoon';
+            font-family: "icomoon";
             padding-right: 8px;
         }
     }
-    .icon-shopping-cart{
+    .icon-shopping-cart {
         background-color: $green;
     }
-    .icon-heart-o{
+    .icon-heart-o {
         background-color: #42a5f5;
     }
 }
-.product-author_box{
+.product-author_box {
     padding: 25px 0;
     display: flex;
 }
-.author_avatar{
+.author_avatar {
     margin-right: 14px;
 }
-.author_name{
+.author_name {
     font-size: 18px;
     color: $bg;
     margin-bottom: 2px;
 }
-.author_info-link{
+.author_info-link {
     color: #707070;
     font-size: 13px;
     padding: 6px 9px 5px;
     border: 1px solid #d5d5d5;
 }
-.author_awards-list{
-    li{
+.author_awards-list {
+    li {
         display: inline-block;
         color: #fff;
         font-size: 20px;
         position: relative;
-        &::before{
+        &::before {
             position: absolute;
             top: 6px;
             left: 50%;
             transform: translateX(-50%);
         }
-        & + li{
+        & + li {
             margin-left: 4px;
         }
     }
-    .icon-meh-o{
+    .icon-meh-o {
         background-image: url(../images/awards/awards-orange.png);
         width: 34px;
         height: 37px;
     }
-    .icon-pagelines{
+    .icon-pagelines {
         background-image: url(../images/awards/awards-red.png);
         width: 34px;
         height: 37px;
     }
-    .icon-flash{
+    .icon-flash {
         background-image: url(../images/awards/awards-blue.png);
         width: 34px;
         height: 37px;
     }
-    .icon-foursquare{
+    .icon-foursquare {
         background-image: url(../images/awards/awards-green.png);
         width: 34px;
         height: 37px;
     }
-    .icon-yen{
+    .icon-yen {
         background-image: url(../images/awards/awards-gray.png);
         width: 34px;
         height: 37px;
     }
 }
-.aside_item-sales{
+.aside_item-sales {
     padding-top: 23px;
     font-size: 16px;
     @include f300;
-    span{
+    span {
         @include f700;
         font-size: 20px;
         color: #263238;
         padding-right: 15px;
-        &::before{
-            font-family: 'icomoon';
+        &::before {
+            font-family: "icomoon";
             color: #a6b5bb;
             padding-right: 20px;
-            content: '\f07a'
+            content: "\f07a";
         }
     }
 }
-.aside_item.sales-number{
+.aside_item.sales-number {
     padding-bottom: 25px;
 }
-.information_line{
+.information_line {
     font-size: 14px;
     color: #70838d;
     margin-top: 20px;
     line-height: 18px;
-    span{
+    span {
         color: $bg;
         @include f500;
     }
@@ -1600,32 +1599,32 @@
 
 //start page 404
 
-.page-404_wrapper{
+.page-404_wrapper {
     border: 1px solid #dcdcdc;
     background-color: #fff;
     margin-bottom: 150px;
 }
-.page-404_head{
+.page-404_head {
     font-size: 24px;
     color: #444444;
     padding: 23px 27px;
     @include f500;
     border-bottom: 1px solid #dcdcdc;
 }
-.page-404_inner{
+.page-404_inner {
     text-align: center;
     background-color: $green;
     color: #fff;
 }
-.page-404_404{
-    font-family: 'Open Sans', sans-serif;
+.page-404_404 {
+    font-family: "Open Sans", sans-serif;
     font-weight: 800;
     font-size: 300px;
     padding-top: 70px;
     line-height: 300px;
     position: relative;
-    &::after{
-        content: '';
+    &::after {
+        content: "";
         position: absolute;
         height: 292px;
         width: 150px;
@@ -1634,19 +1633,19 @@
     }
     padding-bottom: 20px;
 }
-.page-404_title{
+.page-404_title {
     margin-bottom: 30px;
     @include f300;
     font-size: 30px;
     color: #fff;
 }
-.page-404_text{
+.page-404_text {
     font-size: 18px;
     max-width: 501px;
     margin: 0 auto;
     margin-bottom: 60px;
 }
-.page-404_link{
+.page-404_link {
     color: #fff;
     font-size: 14px;
     text-transform: uppercase;
@@ -1974,14 +1973,14 @@
 // end header
 
 //start modal
-#modal{
+#modal {
     background-color: $green;
     max-width: 730px;
     width: 100%;
     padding-top: 90px;
     padding-bottom: 100px;
 }
-.login_title{
+.login_title {
     text-align: center;
     color: #fff;
     text-transform: uppercase;
@@ -1989,31 +1988,31 @@
     @include f700;
     margin-bottom: 40px;
 }
-.login_wrapper{
-    form{
+.login_wrapper {
+    form {
         max-width: 400px;
         margin: 0 auto;
     }
-    label{
+    label {
         position: relative;
-        &::before{
+        &::before {
             position: absolute;
-            font-family: 'icomoon';
+            font-family: "icomoon";
             color: #fff;
             font-size: 14px;
             left: 18px;
             top: 9px;
         }
     }
-    .login_label-name::before{
+    .login_label-name::before {
         content: "\f007";
         z-index: 1;
     }
-    .login_label-pass::before{
+    .login_label-pass::before {
         content: "\f023";
         z-index: 1;
     }
-    input{
+    input {
         height: 43px;
         margin-bottom: 8px;
         border: none;
@@ -2024,13 +2023,12 @@
         padding-left: 40px;
         display: block;
         width: 100%;
-        &::placeholder{
+        &::placeholder {
             color: #fff;
             font-size: 14px;
-            
         }
     }
-    button{
+    button {
         margin-top: 19px;
         padding: 18px 0 16px;
         background-color: #fff;
@@ -2041,15 +2039,15 @@
         @include f700;
         color: #000;
         text-align: center;
-        box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75); 
+        box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
     }
-    .lost-pass{
+    .lost-pass {
         display: block;
         margin-top: 20px;
         color: #fff;
         font-size: 18px;
     }
-    .create-acc{
+    .create-acc {
         margin-top: 19px;
         padding: 15px 0 15px 28px;
         text-align: center;
@@ -2058,8 +2056,8 @@
         color: #fff;
         font-size: 18px;
         position: relative;
-        &::before{
-            font-family: 'icomoon';
+        &::before {
+            font-family: "icomoon";
             content: "\f044";
             position: absolute;
             top: 15px;
@@ -2067,7 +2065,7 @@
         }
     }
 }
-.fancybox-button svg path{
+.fancybox-button svg path {
     color: #fff;
 }
 //end modal
@@ -3046,59 +3044,59 @@
     border: 1px solid #dcdcdc;
     margin-bottom: 28px;
 }
-.product-one_tabs{
+.product-one_tabs {
     margin-bottom: 55px;
 }
-.tabs{
+.tabs {
     display: flex;
     text-align: center;
     border: 1px solid #d7d7d7;
-    .tab{
+    .tab {
         width: 100%;
         background-color: #fff;
         font-size: 16px;
         color: #70838d;
         padding: 20px 0;
         cursor: pointer;
-        & + .tab{
+        & + .tab {
             border-left: 1px solid #d7d7d7;
         }
     }
 }
-.tab_content{
+.tab_content {
     background-color: #fff;
     border: 1px solid #d7d7d7;
     border-top: none;
     padding: 30px 30px 50px;
 }
-.tab-item{
+.tab-item {
     display: none;
-    &:first-child{
+    &:first-child {
         display: block;
     }
 }
-.tab-items_list{
+.tab-items_list {
     line-height: 36px;
     font-size: 16px;
     color: #707070;
     column-count: 2;
     column-gap: 25px;
-    li{
+    li {
         max-width: 270px;
         width: 100%;
     }
 }
-.active{
+.active {
     border-bottom: 3px solid $green;
     @include f500;
     color: #000 !important;
 }
-.product-one_more-icons{
+.product-one_more-icons {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.productmini{
+.productmini {
     margin-bottom: 27px;
     display: flex;
     height: 90px;
@@ -3107,22 +3105,22 @@
     max-width: 270px;
     background-color: #fff;
     width: 100%;
-    &_name{
+    &_name {
         @include f500;
         font-size: 14px;
         color: $bg;
     }
-    &_theme{
+    &_theme {
         color: $green;
         font-size: 12px;
     }
-    &_price{
+    &_price {
         @include f700;
         color: $bg;
         font-size: 18px;
     }
 }
-.productmini_images{
+.productmini_images {
     width: 100px;
     height: 90px;
     margin-right: 20px;
@@ -3130,18 +3128,18 @@
     background-size: cover;
     background-position: center;
 }
-.price_box{
+.price_box {
     display: flex;
     justify-content: space-between;
     padding: 30px 0px;
 }
-.price_product{
+.price_product {
     color: $red;
     font-size: 22px;
     @include f500;
 }
-.product_price{
-    button{
+.product_price {
+    button {
         margin-bottom: 7px;
         box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
         border: none;
@@ -3149,111 +3147,111 @@
         color: #fff;
         font-size: 16px;
         font-weight: 700;
-        font-family: 'Roboto', sans-serif !important;
+        font-family: "Roboto", sans-serif !important;
         text-align: center;
         display: block;
         padding: 17px 5px 15px;
         width: 100%;
         cursor: pointer;
-        &::before{
+        &::before {
             font-weight: 400;
-            font-family: 'icomoon';
+            font-family: "icomoon";
             padding-right: 8px;
         }
     }
-    .icon-shopping-cart{
+    .icon-shopping-cart {
         background-color: $green;
     }
-    .icon-heart-o{
+    .icon-heart-o {
         background-color: #42a5f5;
     }
 }
-.product-author_box{
+.product-author_box {
     padding: 25px 0;
     display: flex;
 }
-.author_avatar{
+.author_avatar {
     margin-right: 14px;
 }
-.author_name{
+.author_name {
     font-size: 18px;
     color: $bg;
     margin-bottom: 2px;
 }
-.author_info-link{
+.author_info-link {
     color: #707070;
     font-size: 13px;
     padding: 6px 9px 5px;
     border: 1px solid #d5d5d5;
 }
-.author_awards-list{
-    li{
+.author_awards-list {
+    li {
         display: inline-block;
         color: #fff;
         font-size: 20px;
         position: relative;
-        &::before{
+        &::before {
             position: absolute;
             top: 6px;
             left: 50%;
             transform: translateX(-50%);
         }
-        & + li{
+        & + li {
             margin-left: 4px;
         }
     }
-    .icon-meh-o{
+    .icon-meh-o {
         background-image: url(../images/awards/awards-orange.png);
         width: 34px;
         height: 37px;
     }
-    .icon-pagelines{
+    .icon-pagelines {
         background-image: url(../images/awards/awards-red.png);
         width: 34px;
         height: 37px;
     }
-    .icon-flash{
+    .icon-flash {
         background-image: url(../images/awards/awards-blue.png);
         width: 34px;
         height: 37px;
     }
-    .icon-foursquare{
+    .icon-foursquare {
         background-image: url(../images/awards/awards-green.png);
         width: 34px;
         height: 37px;
     }
-    .icon-yen{
+    .icon-yen {
         background-image: url(../images/awards/awards-gray.png);
         width: 34px;
         height: 37px;
     }
 }
-.aside_item-sales{
+.aside_item-sales {
     padding-top: 23px;
     font-size: 16px;
     @include f300;
-    span{
+    span {
         @include f700;
         font-size: 20px;
         color: #263238;
         padding-right: 15px;
-        &::before{
-            font-family: 'icomoon';
+        &::before {
+            font-family: "icomoon";
             color: #a6b5bb;
             padding-right: 20px;
-            content: '\f07a'
+            content: "\f07a";
         }
     }
 }
-.aside_item.sales-number{
+.aside_item.sales-number {
     padding-bottom: 25px;
 }
-.information_line{
+.information_line {
     font-size: 14px;
     color: #70838d;
     margin-top: 20px;
     line-height: 18px;
-    span{
+    span {
         color: $bg;
         @include f500;
     }
@@ -3265,34 +3263,34 @@
 
 .page-404_wrapper,
 .about_wrapper,
-.contact_wrapper{
+.contact_wrapper {
     border: 1px solid #dcdcdc;
     background-color: #fff;
     margin-bottom: 150px;
 }
 .page-404_head,
 .about_head,
-.contact_head{
+.contact_head {
     font-size: 24px;
     color: #444444;
     padding: 23px 27px;
     @include f500;
     border-bottom: 1px solid #dcdcdc;
 }
-.page-404_inner{
+.page-404_inner {
     text-align: center;
     background-color: $green;
     color: #fff;
 }
-.page-404_404{
-    font-family: 'Open Sans', sans-serif;
+.page-404_404 {
+    font-family: "Open Sans", sans-serif;
     font-weight: 800;
     font-size: 300px;
     padding-top: 70px;
     line-height: 300px;
     position: relative;
-    &::after{
-        content: '';
+    &::after {
+        content: "";
         position: absolute;
         height: 292px;
         width: 150px;
@@ -3301,19 +3299,19 @@
     }
     padding-bottom: 20px;
 }
-.page-404_title{
+.page-404_title {
     margin-bottom: 30px;
     @include f300;
     font-size: 30px;
     color: #fff;
 }
-.page-404_text{
+.page-404_text {
     font-size: 18px;
     max-width: 501px;
     margin: 0 auto;
     margin-bottom: 60px;
 }
-.page-404_link{
+.page-404_link {
     color: #fff;
     font-size: 14px;
     text-transform: uppercase;
@@ -3327,18 +3325,18 @@
 
 //start about
 
-.about_inner{
+.about_inner {
     padding: 0px 50px;
 }
-.about_box{
-    h3{
+.about_box {
+    h3 {
         font-size: 20px;
         @include f700;
         color: #444;
         margin-top: 40px;
         margin-bottom: 15px;
     }
-    p{
+    p {
         font-size: 15px;
         color: #707070;
         margin-bottom: 40px;
@@ -3349,42 +3347,42 @@
 
 //start contacts
 
-.contact_head{
+.contact_head {
     padding-left: 40px;
     padding-right: 40px;
 }
-.contact_inner{
+.contact_inner {
     padding: 35px 40px 15px;
 }
-.contact_map{
+.contact_map {
     margin-bottom: 50px;
-    iframe{
+    iframe {
         width: 100%;
         height: 415px;
     }
 }
-.contact_box{
+.contact_box {
     display: flex;
 }
-.contact_info{
+.contact_info {
     margin-right: 30px;
     max-width: 300px;
     width: 100%;
 }
-.contact_info-item{
+.contact_info-item {
     margin-bottom: 30px;
 }
-.contact_info-title{
+.contact_info-title {
     padding-bottom: 20px;
     position: relative;
     font-size: 20px;
     @include f500;
     color: $bg;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: "Roboto", sans-serif !important;
     padding-left: 40px;
     margin-bottom: 25px;
-    &::after{
-        content: '';
+    &::after {
+        content: "";
         position: absolute;
         width: 44px;
         height: 4px;
@@ -3392,32 +3390,32 @@
         left: 40px;
         bottom: 0;
     }
-    &::before{
-        font-family: 'icomoon';
+    &::before {
+        font-family: "icomoon";
         position: absolute;
         left: 0;
         color: $green;
         font-size: 24px;
     }
 }
-.contact_info-content{
+.contact_info-content {
     padding-left: 40px;
     color: #707070;
     max-width: 230px;
 }
-.contact_form-title{
+.contact_form-title {
     font-size: 24px;
     @include f500;
     color: #333333;
     margin-bottom: 25px;
 }
-.contact_form-row{
+.contact_form-row {
     display: flex;
     justify-content: space-between;
 }
-.contact_form{
+.contact_form {
     width: 100%;
-    input{
+    input {
         display: block;
         border: none;
         height: 43px;
@@ -3427,12 +3425,12 @@
         background-color: #f1f4f5;
         width: 350px;
         margin-bottom: 30px;
-        &::placeholder{
+        &::placeholder {
             color: #7a7a7a;
             font-size: 15px;
         }
     }
-    textarea{
+    textarea {
         border: none;
         display: block;
         border: none;
@@ -3443,12 +3441,12 @@
         width: 100%;
         resize: none;
         margin-bottom: 23px;
-        &::placeholder{
+        &::placeholder {
             color: #7a7a7a;
             font-size: 15px;
         }
     }
-    button{
+    button {
         border: none;
         text-transform: uppercase;
         background-color: $green;
@@ -3462,5 +3460,101 @@
 }
 
 //end contacts
+
+//start settings
+
+.settings {
+    padding-bottom: 100px;
+}
+.product-one_tabs.settings_tabs {
+    display: flex;
+    .tabs {
+        max-width: 270px;
+        width: 100%;
+        display: block;
+        margin-right: 30px;
+        border: 1px solid #dedede;
+        border-bottom: none;
+        text-align-last: left;
+        height: 100%;
+        span {
+            display: block;
+            background-color: #fff;
+            border-bottom: 1px solid #dedede;
+            padding: 17px 17px 17px 50px;
+            color: #707070;
+            font-size: 14px;
+            @include f500;
+            &.active {
+                border-bottom: 2px solid $green;
+                color: #37474f;
+                &::before {
+                    color: $green;
+                }
+            }
+            &::before {
+                left: 24px;
+                color: #444444;
+            }
+        }
+    }
+    .tabs .tab + .tab {
+        border-left: none;
+    }
+    .tab_content {
+        width: 100%;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+    }
+    .page-box {
+        border: 1px solid #dedede;
+        background-color: #fff;
+        min-height: 100%;
+        
+    }
+    .page-box_title {
+        border-bottom: 1px solid #dedede;
+        font-size: 24px;
+        padding: 18px 34px;
+        @include f500;
+        color: $bg;
+    }
+    .page-box_content {
+        padding: 30px 35px 80px;
+    }
+}
+.settings_line{
+    margin-bottom: 21px;
+    display: flex;
+    align-items: center;
+    label{
+        width: 260px;
+        color: #444444;
+    }
+    input{
+        max-width: 540px;
+        width: 100%;
+        background-color: #f9f9f9;
+        color: #000;
+        height: 40px;
+        border: 1px solid #dcdcdc;
+        outline: none;
+        padding: 0px 10px;
+    }
+    select{
+        max-width: 540px;
+        width: 100%;
+        background-color: #f9f9f9;
+        color: #000;
+        height: 40px;
+        border: 1px solid #dcdcdc;
+        outline: none;
+        padding: 0px 10px;
+        color: #707070
+    }
+}
+
+//end settings
 
 @import "media";
